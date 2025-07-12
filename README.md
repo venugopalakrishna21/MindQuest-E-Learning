@@ -1,47 +1,38 @@
-# MindQuest – E-Learning Platform 🎓
+# 💡 MindQuest – E-Learning Platform
 
-MindQuest is an interactive E-Learning platform designed for students to log in, access modules, and track their learning progress efficiently.
-
----
-
-## 🛠 Tech Stack
-
-- **Frontend**: HTML, CSS  
-- **Backend**: Python  
-- **Database**: Firebase
+MindQuest is a personalized E-Learning web platform built for modern learners. Track your progress, access structured modules, and grow your knowledge through a smooth digital experience.
 
 ---
 
-## ✨ Features
+## 🚀 Tech Stack
 
-- 🔐 User Authentication (Login/Signup)
-- 📚 Module-based learning content
-- 📊 Real-time progress tracking
-- 💾 Firebase integration for data storage
-
----
-
-## 📸 Screenshots (Optional)
-
-> You can add screenshots like this:
->  
-> ![Login Page](screenshots/login.png)
+- 🐍 Python (Backend)
+- 🔥 Firebase (Authentication & Database)
+- 🌐 HTML, CSS (Frontend)
+- ⚙️ VS Code, Git, GitHub
 
 ---
 
-## 🚀 Getting Started
+## ✅ Features
 
-```bash
-# Clone the repo
-git clone https://github.com/venugopalakrishna21/MindQuest-E-Learning.git
+- 🔐 User Login and Signup
+- 📚 Learning Module Navigation
+- 📈 Progress Tracking
+- 🌐 Firebase Integration (Real-Time)
+- 📄 Clean UI for Easy Navigation
 
-# Navigate to the project folder
-cd MindQuest-E-Learning
+---
+## 🖼️ Project Screenshot
 
-# Run the app (if using Flask or similar)
-python app.py
+![Home Page](home.png)
+
 ## 📸 Screenshots
 
 ### 🖥️ Home Page
 
 ![Home Page](assets/screenshots/home.png)
+
+---
+
+## 📁 Folder Structure (Basic)
+
