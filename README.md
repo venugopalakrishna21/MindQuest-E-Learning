@@ -1,41 +1,103 @@
-# MindQuest – E-Learning Platform
+# MindQuest – E-Learning Platform 🧠
 
-MindQuest is a simple and effective E-Learning platform built using **Flask**, **Firebase**, **HTML**, **CSS**, and **JavaScript**.  
-It allows users to sign up, log in, and explore available course modules with dynamic data pulled from Firebase Realtime Database.
+A modern e-learning platform built with **Flask**, **Firebase**, and **HTML/CSS**. MindQuest offers users a seamless authentication experience and dynamic access to curated learning resources. It’s designed to demonstrate full-stack web development skills with real-time data and user state management.
 
 ---
 
-## 🚀 Tech Stack
+## 🔧 Tech Stack
 
-- **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Python (Flask)
-- **Authentication**: Firebase Authentication
-- **Database**: Firebase Realtime Database
+**Frontend:**
+- HTML5, CSS3
+- Vanilla JavaScript
+- Firebase CDN (Auth, Realtime DB)
+
+**Backend:**
+- Python 3
+- Flask (Jinja2 templating, REST API)
+
+**Database:**
+- Firebase Realtime Database
+- Firebase Authentication
 
 ---
 
 ## ✨ Features
 
-- 🔐 User Signup & Login (Firebase Auth)
-- 🔓 Secure access to course modules after login
-- 📚 Live course data loaded from Firebase
-- 🚪 Logout functionality
-- 📦 Flask API backend serving JSON data
-- 🖥️ Clean UI with responsive design
-
----
-
-## 📸 Screenshots
-
-### 🔹 Homepage (After Login)
-
-![Home](assets/screenshots/home.png)
-
-### 🔹 Course Page
-
-![Courses](assets/screenshots/courses.png)
+- 🔐 User Authentication (Signup, Login, Logout) via Firebase Auth
+- 🧭 Conditional navigation and UI elements based on login state
+- 📚 Courses page fetches real-time content from Firebase via Flask API
+- 🚫 Route protection: Unauthenticated users are redirected to login
+- 👤 Logged-in user's email shown in header
+- 🔁 Post-login redirect to the learning dashboard
+- 🎯 Clean, responsive layout using pure CSS
+- 📂 Organized folder structure and fully functional locally
 
 ---
 
 ## 📁 Project Structure
 
+```
+MindQuest-E-Learning/
+├── app.py
+├── firebase_config.py
+├── firebase-credentials.json
+├── templates/
+│   ├── index.html
+│   └── courses.html
+├── static/
+│   ├── style.css
+│   ├── auth.js
+│   ├── courses.js
+│   └── firebase_config.js
+```
+
+---
+
+## 🛠️ How to Run the Project Locally
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/your-username/MindQuest-E-Learning.git
+   cd MindQuest-E-Learning
+   ```
+
+2. **Install dependencies**
+   ```bash
+   pip install flask firebase-admin
+   ```
+
+3. **Add your Firebase credentials**
+   - Download your service account JSON file from Firebase Console
+   - Rename it to `firebase-credentials.json` and place it in the root
+
+4. **Update `firebase_config.js`**
+   - Use your Firebase web config (from the Firebase dashboard)
+
+5. **Start the app**
+   ```bash
+   python app.py
+   ```
+
+6. Open browser:
+   ```
+   http://127.0.0.1:5000/
+   ```
+
+---
+
+## 📸 Screenshots
+
+> 📌 Add screenshots below:
+- Home page (logged out)
+- Login screen
+- Courses dashboard (logged in)
+
+---
+
+## 🪪 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+> Built for learning, demonstrating Firebase + Flask integration with real-time auth and data.

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MindQuest</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <!-- Firebase v8 -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script src="{{ url_for('static', filename='firebase_config.js') }}"></script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f8fb;
+      margin: 0;
+    }
+
+    .navbar {
+      background-color: #1d3557;
+      color: white;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .user-email {
+      margin-right: 10px;
+    }
+
+    .logout-btn {
+      background-color: white;
+      color: #1d3557;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: white;
+      border-radius: 12px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #1d3557;
+    }
+
+    #startLearning {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background-color: #1d3557;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #authContainer {
+      margin-top: 40px;
+      text-align: left;
+    }
+
+    #authContainer input {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    #authContainer button {
+      padding: 10px 16px;
+      background-color: #1d3557;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    #authContainer h2 {
+      margin-top: 30px;
+      color: #1d3557;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <span class="logo">MindQuest</span>
+    <div>
+      <span id="user-email" class="user-email"></span>
+      <button id="logoutBtn" onclick="logout()" class="logout-btn" style="display: none;">Logout</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Welcome to MindQuest</h1>
+    <p>Your personalized learning experience begins here.</p>
+    <button id="startLearning" onclick="window.location.href='/courses'" style="display: none;">Start Learning</button>
+
+    <div id="authContainer">
+      <h2>Signup</h2>
+      <input type="email" id="signupEmail" placeholder="Email">
+      <input type="password" id="signupPassword" placeholder="Password">
+      <button onclick="signUp()">Sign Up</button>
+
+      <h2>Login</h2>
+      <input type="email" id="loginEmail" placeholder="Email">
+      <input type="password" id="loginPassword" placeholder="Password">
+      <button onclick="login()">Log In</button>
+    </div>
+  </div>
+
+  <!-- Auth Script -->
+  <script src="{{ url_for('static', filename='auth.js') }}"></script>
+</body>
+</html>

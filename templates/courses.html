@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Courses - MindQuest</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <!-- Firebase CDN -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="{{ url_for('static', filename='firebase_config.js') }}"></script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f8fb;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #1d3557;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar button {
+      background-color: white;
+      color: #1d3557;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      background-color: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .course-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .course-card {
+      background-color: #fefefe;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .course-card h3 {
+      margin-top: 0;
+      color: #1d3557;
+    }
+
+    .course-card p {
+      color: #444;
+      font-size: 14px;
+    }
+
+    .course-card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #1d3557;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .course-card a:hover {
+      background-color: #457b9d;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <span class="logo"><strong>MindQuest</strong></span>
+    <div>
+      <button onclick="window.location.href='/'">🏠 Home</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Available Courses</h2>
+    <div id="courseList" class="course-list"></div>
+  </div>
+
+  <!-- Auth + Courses JS -->
+    <!-- Auth & Course JS -->
+  <script src="{{ url_for('static', filename='auth.js') }}"></script>
+  <script src="{{ url_for('static', filename='courses.js') }}"></script>
+</body>
+</html>
