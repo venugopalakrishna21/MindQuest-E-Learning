@@ -1,38 +1,41 @@
-# 💡 MindQuest – E-Learning Platform
+# MindQuest – E-Learning Platform
 
-MindQuest is a personalized E-Learning web platform built for modern learners. Track your progress, access structured modules, and grow your knowledge through a smooth digital experience.
+MindQuest is a simple and effective E-Learning platform built using **Flask**, **Firebase**, **HTML**, **CSS**, and **JavaScript**.  
+It allows users to sign up, log in, and explore available course modules with dynamic data pulled from Firebase Realtime Database.
 
 ---
 
 ## 🚀 Tech Stack
 
-- 🐍 Python (Backend)
-- 🔥 Firebase (Authentication & Database)
-- 🌐 HTML, CSS (Frontend)
-- ⚙️ VS Code, Git, GitHub
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Python (Flask)
+- **Authentication**: Firebase Authentication
+- **Database**: Firebase Realtime Database
 
 ---
 
-## ✅ Features
+## ✨ Features
 
-- 🔐 User Login and Signup
-- 📚 Learning Module Navigation
-- 📈 Progress Tracking
-- 🌐 Firebase Integration (Real-Time)
-- 📄 Clean UI for Easy Navigation
+- 🔐 User Signup & Login (Firebase Auth)
+- 🔓 Secure access to course modules after login
+- 📚 Live course data loaded from Firebase
+- 🚪 Logout functionality
+- 📦 Flask API backend serving JSON data
+- 🖥️ Clean UI with responsive design
 
 ---
-## 🖼️ Project Screenshot
-
-![Home Page](home.png)
 
 ## 📸 Screenshots
 
-### 🖥️ Home Page
+### 🔹 Homepage (After Login)
 
-![Home Page](assets/screenshots/home.png)
+![Home](assets/screenshots/home.png)
+
+### 🔹 Course Page
+
+![Courses](assets/screenshots/courses.png)
 
 ---
 
-## 📁 Folder Structure (Basic)
+## 📁 Project Structure
 
