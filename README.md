@@ -7,29 +7,29 @@ A modern e-learning platform built with **Flask**, **Firebase**, and **HTML/CSS*
 ## 🔧 Tech Stack
 
 **Frontend:**
-- HTML5, CSS3
-- Vanilla JavaScript
+- HTML5, CSS3  
+- Vanilla JavaScript  
 - Firebase CDN (Auth, Realtime DB)
 
 **Backend:**
-- Python 3
+- Python 3  
 - Flask (Jinja2 templating, REST API)
 
 **Database:**
-- Firebase Realtime Database
+- Firebase Realtime Database  
 - Firebase Authentication
 
 ---
 
 ## ✨ Features
 
-- 🔐 User Authentication (Signup, Login, Logout) via Firebase Auth
-- 🧭 Conditional navigation and UI elements based on login state
-- 📚 Courses page fetches real-time content from Firebase via Flask API
-- 🚫 Route protection: Unauthenticated users are redirected to login
-- 👤 Logged-in user's email shown in header
-- 🔁 Post-login redirect to the learning dashboard
-- 🎯 Clean, responsive layout using pure CSS
+- 🔐 User Authentication (Signup, Login, Logout) via Firebase Auth  
+- 🧭 Conditional navigation and UI elements based on login state  
+- 📚 Courses page fetches real-time content from Firebase via Flask API  
+- 🚫 Route protection: Unauthenticated users are redirected to login  
+- 👤 Logged-in user's email shown in header  
+- 🔁 Post-login redirect to the learning dashboard  
+- 🎯 Clean, responsive layout using pure CSS  
 - 📂 Organized folder structure and fully functional locally
 
 ---
@@ -67,8 +67,8 @@ MindQuest-E-Learning/
    ```
 
 3. **Add your Firebase credentials**
-   - Download your service account JSON file from Firebase Console
-   - Rename it to `firebase-credentials.json` and place it in the root
+   - Download your service account JSON file from Firebase Console  
+   - Rename it to `firebase-credentials.json` and place it in the root  
 
 4. **Update `firebase_config.js`**
    - Use your Firebase web config (from the Firebase dashboard)
@@ -87,10 +87,14 @@ MindQuest-E-Learning/
 
 ## 📸 Screenshots
 
-> 📌 Add screenshots below:
-- Home page (logged out)
-- Login screen
-- Courses dashboard (logged in)
+### 🔐 Login & Signup
+![Login and Signup](screenshots/Screenshot_2025-07-15_154957.png)
+
+### 🏠 Home (After Login)
+![Home Page](screenshots/Screenshot_2025-07-15_155024.png)
+
+### 📚 Courses Page
+![Courses Page](screenshots/6d2200df-e34f-4afb-9641-8856145aee4e.png)
 
 ---
 
