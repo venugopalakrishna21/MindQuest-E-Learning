@@ -94,7 +94,7 @@ MindQuest-E-Learning/
 ![Login and Signup](screenshots/login_signup.png)
 
 ### 🏠 Home (After Login)
-![Home Page](screenshots/home_loggedin.png)
+![Home Page](screenshots/home_dashboard.png)
 
 ### 📚 Courses Page
 ![Courses Page](screenshots/courses_page.png)
