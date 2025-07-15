@@ -1,3 +1,6 @@
+![MIT License](https://img.shields.io/badge/license-MIT-green)
+![Python](https://img.shields.io/badge/Built%20with-Python-blue)
+![Firebase](https://img.shields.io/badge/Firebase-Enabled-orange)
 # MindQuest – E-Learning Platform 🧠
 
 A modern e-learning platform built with **Flask**, **Firebase**, and **HTML/CSS**. MindQuest offers users a seamless authentication experience and dynamic access to curated learning resources. It’s designed to demonstrate full-stack web development skills with real-time data and user state management.
@@ -105,3 +108,5 @@ This project is licensed under the **MIT License**.
 ---
 
 > Built for learning, demonstrating Firebase + Flask integration with real-time auth and data.
+## 🧠 What I Learned
+Built this project from scratch to understand full-stack development using Firebase and Flask. Learned about real-time databases, authentication, and frontend/backend integration.
