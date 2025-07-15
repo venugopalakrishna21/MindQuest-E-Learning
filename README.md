@@ -91,13 +91,13 @@ MindQuest-E-Learning/
 ## 📸 Screenshots
 
 ### 🔐 Login & Signup
-![Login and Signup](screenshots/Screenshot_2025-07-15_154957.png)
+![Login and Signup](screenshots/login_signup.png)
 
 ### 🏠 Home (After Login)
-![Home Page](screenshots/Screenshot_2025-07-15_155024.png)
+![Home Page](screenshots/home_loggedin.png)
 
 ### 📚 Courses Page
-![Courses Page](screenshots/6d2200df-e34f-4afb-9641-8856145aee4e.png)
+![Courses Page](screenshots/courses_page.png)
 
 ---
 
